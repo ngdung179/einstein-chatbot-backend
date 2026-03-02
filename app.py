@@ -194,6 +194,3 @@ def chat(message, history):
         config={"configurable": {"session_id": "default"}}
     )
     return result["answer"]
-@app.get("/")
-def root():
-    return {"status": "Backend is running 🚀"}

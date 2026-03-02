@@ -14,3 +14,6 @@ def chat_api(request: ChatRequest):
         config={"configurable": {"session_id": "default"}}
     )
     return {"answer": result["answer"]}
+@app.get("/")
+def root():
+    return {"status": "Backend is running 🚀"}
