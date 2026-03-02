@@ -23,12 +23,12 @@ from langchain.chains.combine_documents import create_stuff_documents_chain
 # ==============================
 # LOAD ENV
 # ==============================
-load_dotenv()
-GOOGLE_KEY = os.getenv("GOOGLE_API_KEY")
+import os
 
-if not GOOGLE_KEY:
-    raise ValueError("GOOGLE_API_KEY not found in .env")
+GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 
+if not GOOGLE_API_KEY:
+    raise ValueError("GOOGLE_API_KEY not found")
 # ==============================
 # CONFIG
 # ==============================
