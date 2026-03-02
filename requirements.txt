@@ -3,5 +3,6 @@ uvicorn
 langchain
 langchain-google-genai
 langchain-chroma
+langchain-text-splitters
 chromadb
 google-generativeai
