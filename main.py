@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
-from app import conversational_rag  # import từ file app.py của bạn
+from app import get_rag
 
 app = FastAPI()
 
@@ -9,7 +9,8 @@ class ChatRequest(BaseModel):
 
 @app.post("/chat")
 def chat_api(request: ChatRequest):
-    result = conversational_rag.invoke(
+    rag = get_rag()
+    result = rag.invoke(
         {"input": request.message},
         config={"configurable": {"session_id": "default"}}
     )
