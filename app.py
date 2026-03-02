@@ -1,7 +1,6 @@
 import os
 import glob
 from dotenv import load_dotenv
-import gradio as gr
 
 from langchain_core.documents import Document
 from langchain_text_splitters import RecursiveCharacterTextSplitter
