@@ -1,0 +1,4 @@
+vector_db/
+.gradio/
+.env
+__pycache__/

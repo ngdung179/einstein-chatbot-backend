@@ -1,0 +1,14 @@
+python-dotenv 
+gradio 
+openai 
+google-generativeai 
+langchain 
+langchain-openai 
+langchain-document-loaders 
+chromadb 
+langchain_chroma 
+scikit-learn 
+plotly
+fastapi
+uvicorn
+python-multipart
